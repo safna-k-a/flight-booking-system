@@ -1,0 +1,89 @@
+/* (A) ENTIRE PAGE */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("images/book-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* (B) SEATS LAYOUT */
+#layout {
+    max-width: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+.seat {
+    text-align: center;
+    padding: 10px 0px;
+    background: #4373f7;
+}
+#layout .seat {
+    cursor: pointer;
+}
+.taken {
+    color: #1f1f1f;
+    background: #a7a3a3 !important;
+}
+.selected {
+    background: #24c942 !important;
+}
+
+/* (C) LEGEND */
+#legend {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    margin-bottom: 30px;
+}
+#legend div {
+    padding: 10px;
+}
+
+/* (D) "CHECKOUT" */
+#go {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    border: 0;
+    font-size: large;
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #060848;
+    cursor: pointer;
+}
+.btn {
+    margin: 0 auto;
+    width: 150px;
+}
+.t-div {
+    width: 30%;
+    /* background-color: #9f3737; */
+    margin: 0 auto;
+}
+.t-div-1 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #9f3737; */
+    margin: 0 auto;
+}
+.price-dis p {
+    color: #f00;
+    /* font-weight: bolder; */
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.h {
+    height: 50px;
+}
+#legend p {
+    color: #fff;
+}
